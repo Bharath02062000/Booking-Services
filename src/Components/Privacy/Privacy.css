@@ -1,0 +1,22 @@
+.privacy{
+    margin: 0px 30px;
+   
+}
+.privacyimg img{
+    width: 100%;
+    height: 40%;
+}
+ 
+
+/* Mobile styles for Privacy section */
+@media screen and (max-width: 768px) {
+    .privacy {
+      margin: 100px 30px; /* Adjust margin for better spacing */
+    }
+  
+    .privacyimg img {
+      width: 100%; /* Make the image fill the width of its container */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  

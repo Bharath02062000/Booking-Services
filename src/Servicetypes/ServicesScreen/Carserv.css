@@ -1,0 +1,57 @@
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color:  #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 60px; /* Adjust margin between boxes */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(253, 253, 254, 0.936);
+    
+  }
+  .service-text{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    margin-left: -45%;
+  }
+  .box1 img{
+    width: 95%;
+    height: 100px;
+  }
+  .box1 button{
+    background-color: #258614;
+    border-radius: 10px;
+  }
+  
+  .container2 {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2dddd;;
+    width: 100%;
+    padding: 20px
+  }
+  
+  .box1 span {
+    margin: 5px;
+  }
+  
+  .box1 .span {
+    margin-top: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust margin between rows */
+  }
+  
+
+  

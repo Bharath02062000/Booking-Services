@@ -1,0 +1,71 @@
+{
+    "cars": [
+      {
+        "brand": "Toyota",
+        "modal": "Camry",
+        "year": 2020,
+        "services": [
+          {
+            "name": "Oil Change",
+            "price": 50,
+            "image": "oil.png"
+          },
+          {
+            "name": "Tire Rotation",
+            "price": 30,
+            "image": "tire.jpg"
+          },
+          {
+            "name": "Brake Inspection",
+            "price": 40,
+            "image": "repair.jpg"
+          }
+        ]
+      },
+      {
+        "brand": "Honda",
+        "modal": "Civic",
+        "year": 2019,
+        "services": [
+          {
+            "name": "Engine Tune-up",
+            "price": 80,
+            "image": "oil.png"
+          },
+          {
+            "name": "Wheel Alignment",
+            "price": 60,
+            "image": "service1.png"
+          },
+          {
+            "name": "Air Filter Replacement",
+            "price": 20,
+            "image": "tire.jpg"
+          }
+        ]
+      },
+      {
+        "brand": "Ford",
+        "modal": "Fusion",
+        "year": 2021,
+        "services": [
+          {
+            "name": "Transmission Flush",
+            "price": 100,
+            "image": "clean.png"
+          },
+          {
+            "name": "Coolant Change",
+            "price": 70,
+            "image": "battery.jpeg"
+          },
+          {
+            "name": "Spark Plug Replacement",
+            "price": 40,
+            "image": "service1.png"
+          }
+        ]
+      }
+    ]
+  }
+  

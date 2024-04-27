@@ -1,0 +1,142 @@
+.about {
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  
+     
+  }
+  
+  .text1 { 
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #000;
+  }
+  
+  .text2 {
+     
+    margin-top: 20px;
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fdab01;/* Add some space between the two texts */
+  }
+  .text3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+
+  }
+  .mission{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 50px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+  }
+  .vision{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 50px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+  }
+  .mis-img{
+    padding-top: 5%;
+     
+  }
+  .vis-img{
+    padding-top: 5%;
+    
+  }
+     
+  .mis-img img{
+    margin: 30px;
+    width: 80%;
+    height: 100%;
+    border:  solid;
+    border-color: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+  }
+  .vis-img img{
+    margin: 30px;
+    width: 80%;
+    height: 100%;
+    border:  solid;
+    border-color: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+  }
+  .mistext{
+   
+    margin-top: 100px;
+    /* transition: transform 0.3s ease;  */
+  
+  }
+  .mishead{
+    margin-top: 20px;
+    font-size: 36px;
+    font-family: caudex, serif;
+    font-weight: bold;
+    color: #001586;
+    text-align: center;
+    
+  }
+  .vishead{
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: caudex, serif;
+    font-weight: bold;
+    color: #Fdab01;
+    text-align: center;
+  }
+  .vistext{
+   
+    margin-top: 100px;
+    /* transition: transform 0.3s ease;  */
+  
+  }
+  .mistext1{
+    margin: 20px;
+    font-family: caudex, serif;
+    font-size: 1.2rem;
+    color: #000;
+   text-align: center;
+   line-height: 1.8em;
+  }
+  @media screen and (max-width: 768px) {
+    .mission,
+    .vision {
+      display: block;
+      padding: 10px; /* Reduce padding */
+      margin: 5px auto; /* Adjust margin */
+    }
+  
+    .mis-img,
+    .vis-img {
+      padding-top: 0;
+      text-align: center; /* Center images */
+    }
+  
+    .mis-img img,
+    .vis-img img {
+      width: 100%;
+      height: auto;
+      margin: 15px auto; /* Adjust margin */
+    }
+  
+    .mishead,
+    .vishead {
+      margin-top: 10px; /* Adjust margin */
+    }
+  
+    .mistext,
+    .vistext {
+      margin-top: 50px; /* Adjust margin */
+    }
+  }

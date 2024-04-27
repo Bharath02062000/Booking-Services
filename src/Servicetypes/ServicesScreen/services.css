@@ -1,0 +1,130 @@
+ 
+   .container1{
+    margin: 0px auto;
+    
+    background-color: #fff;;
+    padding: 20px;
+   }
+
+   .service-text-head{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    margin-top: -10%;
+    margin-left: 2%;
+
+  }
+
+  .sub{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 50px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  
+  .image img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+        
+  }
+  .image{
+    flex-basis: 31%;
+    margin: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(44, 44, 45, 0.936); 
+    position: relative;
+
+  }
+  .caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(30, 30, 30, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.3s;
+
+  }
+  .image:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+  }
+  .caption img{
+    width: 50px;
+    margin-bottom: 0 10px;
+  }
+  .sideimg{
+   
+    margin-top:  20px;
+   
+  
+  }
+  .sideimg img{
+    margin-left: 30px;
+    width: 80%;
+    height: 100%;
+    border:  solid;
+    border-color: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+   
+
+    
+   
+  
+  }
+ 
+
+
+  .bannersSide{
+    padding-top: 15%;
+  }
+
+
+  /* Mobile styles */
+@media screen and (max-width: 768px) {
+  .sub {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    padding: 10px; /* Adjust padding */
+    gap: 20px; /* Adjust gap between grid items */
+  }
+
+  .image {
+    flex-basis: 100%; /* Occupy full width */
+    margin: 10px ; /* Center align and adjust margin */
+  }
+
+  .caption {
+    padding-top: 40%; /* Adjust padding-top for caption */
+  }
+
+  .caption img {
+    width: 30px; /* Adjust image size */
+  }
+
+  .sideimg img {
+    margin-left: auto; /* Center align side image */
+    margin-right: auto;
+    width: 90%; /* Adjust image width */
+    height: auto; /* Allow height to adjust based on width */
+  }
+ .service-text-head {
+    font-size: 40px; /* Decrease font size for smaller screens */
+    margin-top: 0; /* Remove negative top margin */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center-align the heading */
+  }
+}

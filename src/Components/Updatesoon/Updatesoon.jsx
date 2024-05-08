@@ -8,4 +8,4 @@ const Updatesoon = () => {
   )
 }
 
-export default Updatesoon
+export default Updatesoon;

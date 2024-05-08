@@ -10,16 +10,20 @@ const Cards = () => {
   return (
     <div className="container">
       <div className="row">
-      <Link to="/selectcar" className="box"><FaCar /> Car Services</Link>
-        <div className="box"><span className='span'><FaMotorcycle /></span> <span><Link to="/selectcar">Bike Services</Link></span></div>
-        <div className="box"><FaRing /><Link to="/selectcar">Tire Services </Link></div>
+     <div><Link to="/services" className="box"><FaCar /> Car Services</Link></div> 
+     <div>
+     <Link to="/selectcar" className='box1'><FaMotorcycle /> Bike Service</Link>
+     </div>
+
+ 
+        {/* <div className="box"><FaRing /><Link to="/selectcar">Tire Services </Link></div>
         <div className="box"><FaBatteryHalf /> Battery</div>
       </div>
       <div className="row">
         <div className="box"><FaOilCan /><Link to="/selectcar"> Oil Change </Link></div>
         <div className="box"><FaBrush /><Link to="/selectcar"> Cleaning </Link></div>
         <div className="box"><FaPaintBrush /><Link to="/selectcar"> Inspection </Link></div>
-        <div className="box"><FaSearch /><Link to="/selectcar"> Repair </Link></div>
+        <div className="box"><FaSearch /><Link to="/selectcar"> Repair </Link></div> */}
       </div>
     </div>
   );

@@ -9,13 +9,15 @@ const Navbar = ({ isAuthenticated, username, userProfileImage }) => {
   const [sticky, setSticky] = useState(false);
   const [menu, setMenu] = useState("nav-home");
   const [showProfileMenu, setShowProfileMenu] = useState(false);
-
+ 
+  const [mobileMenu, setMobileMenu] = useState(false);
+   
   useEffect(() => {
     window.addEventListener('scroll', () => {
       window.scrollY > 650 ? setSticky(true) : setSticky(false);
     });
   }, []);
-  const [mobileMenu, setMobileMenu] = useState(false);
+
 const toggleMenu =()=>{
   mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
 }
@@ -27,8 +29,22 @@ const toggleMenu =()=>{
     } catch (error) {
       console.error('Logout error:', error.message);
     }
+  };  
+  const handleCityChange = (e) => {
+    setUserLocation(e.target.value);
   };
 
+  
+  
+  const openHtmlFile = () => {
+    
+    const htmlFilePath = '../../../console/index.html';
+    
+    window.open(htmlFilePath, '_self');
+  };
+
+
+  
   return (
     <div className={`nav ${sticky ? 'dark-nav' : ''}`}>
       <div className='logo'>
@@ -36,9 +52,15 @@ const toggleMenu =()=>{
       </div>
       <ul className={mobileMenu?'': 'nav-menu'}>
         <li onClick={() => setMenu("nav-home")} className={menu === "nav-home" ? "active" : ""}><Link to="/">Home</Link></li>
+        <li className="nav-services">
+    <span onClick={() => setMenu("nav-services")} className={menu === "nav-services" ? "active" : ""}>Services</span>
+    <ul className={menu === "nav-services" ? "submenu active" : "submenu"}>
+      <li onClick={openHtmlFile}>Mygarage</li>
+      <li onClick={() => setMenu("nav-ai")} className={menu === "nav-ai" ? "active" : ""}><Link to="/ai">AI</Link></li>
+    </ul>
+  </li>
         <li onClick={() => setMenu("nav-about")} className={menu === 'nav-about' ? "active" : ""}><Link to="/about">About</Link></li>
         <li onClick={() => setMenu("nav-contact")} className={menu === 'nav-contact' ? "active" : ""}><Link to="/contact">Contact</Link></li>
-        <li onClick={() => setMenu("nav-carcart")} className={menu === 'nav-carcart' ? "active" : ""}><Link to="/cards">Bookings</Link></li>
         {isAuthenticated ? (
           <li className="nav-profile">
             <img
@@ -49,7 +71,7 @@ const toggleMenu =()=>{
             />
             {showProfileMenu && (
               <ul className="profile-menu">
-                {/* <li><Link to="/profile">Profile</Link></li> */}
+                {/* <li><Link to="/profile"></Link></li> */}
                 <li><button onClick={handleLogoutClick}>Logout</button></li>
               </ul>
             )}

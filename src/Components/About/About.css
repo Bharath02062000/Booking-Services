@@ -106,8 +106,8 @@
     font-family: caudex, serif;
     font-size: 1.2rem;
     color: #000;
-   text-align: center;
-   line-height: 1.8em;
+   text-align: start;
+   line-height: 1.5em;
   }
   @media screen and (max-width: 768px) {
     .mission,

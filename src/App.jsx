@@ -21,7 +21,8 @@ import Profile from './Components/Profile/Profile';
 import Refund from './Components/Refund/Refund';
 import Cards from './Servicetypes/Cards/Cards';
 import Updatesoon from './Components/Updatesoon/Updatesoon';
-
+import Ai from './Components/Ai/Ai';
+import Services from './Servicetypes/ServicesScreen/services';
 // Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAWEFragMukqLYjTPvg9DxVjRe3GT6oG8c",
@@ -71,7 +72,10 @@ function App() {
           <Route path="/profile" element={<Profile username={displayName} userProfileImage={userProfileImage} />} />
           <Route path='/refund' element={<Refund />} />
           <Route path='/cards' element={<Cards />} />
-          <Route path='/update' element={<Updatesoon />} />
+          <Route path='/update' element={<Updatesoon />}  />
+          <Route path='/ai' element={<Ai/>}/>
+          <Route path='/services' element={<Services />} />
+          
         </Routes>
         <Footer />
       </div>

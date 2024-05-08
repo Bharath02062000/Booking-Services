@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Logo from '../../assets/logo.png';
+import Logo1 from '../../assets/logo1.png';
 import AppStoreImage from '../../assets/AppStoreImage.png';
 import GooglePlayImage from '../../assets/GooglePlayImage.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__logo">
-          <img src={Logo} alt="Logo" />
+          <img src={Logo1} alt="Logo" />
         </div>
         <div className="footer__social-icons">
           <p>follow us</p>
@@ -43,14 +43,14 @@ const Footer = () => {
             <p> <Link to={'/refund'}>Refund Policy</Link></p>
           </div>
           <div className="footer__address">
-            <p>Address: Idotinfinity(Vehk), 3rd floor, V.V Plaza, Patrika nagar,<br/> hitech City-500081, Telangana, India</p>
+            <p>Address:<br/>  Idotinfinity(Vehk), 3rd floor, V.V Plaza, Patrika nagar,hitech City-500081, Telangana, India</p>
             <p>Phone: +91 9154186096</p>
-            <p><a href='/contact'>Email: support@Vehk.in</a></p>
+            <p><a href='/contact'>Email: info@Vehk.in</a></p>
           </div>
         </div>
       </div>
       <div className="footer__copyright">
-        <p>© 2024 Vehk. All Rights Reserved.</p>
+        <p>© 2024 Idotinfinity(Vehk). All Rights Reserved.</p>
       </div>
     </footer>
   );

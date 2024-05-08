@@ -6,8 +6,8 @@ import visimg from '../../assets/visimg.png'
 const About = () => {
   return (
     <div className='about'>
-        <div className='text1'> The Full of Story</div>
-        <div className='text2'>About</div>
+        {/* <div className='text1'> The Full of Story</div> */}
+        <div className='text2'>About - Us</div>
         <div className='text3'>BOOK A TRUSTED MECHANIC  IN JUST A CLICK</div>
         <div className='mission'>
             <div className='mis-img'>

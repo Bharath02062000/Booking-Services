@@ -5,16 +5,11 @@
     align-items: center;
     background-color: #fff;
     width: 100%;
-    padding: 20px;
-    margin-top: 100px;
-  }
-  .box span {
-    margin: 5px;
+    padding: 10px;
+    margin-bottom: -100px;
+    
   }
   
-  .box .span {
-    margin-top: 8px;
-  }
   
   a {
     text-decoration: none;
@@ -23,7 +18,7 @@
   .row {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; /* Adjust margin between rows */
+    margin: 20px; /* Adjust margin between rows */
   }
   
   .box {
@@ -33,7 +28,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 60px; /* Adjust margin between boxes */
+    margin: 30px 60px; /* Adjust margin between boxes */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  .box1{
+    width: 200px;
+    height: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 60px; /* Adjust margin between boxes */
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -41,17 +48,27 @@
   .box:hover {
     transform: scale(1.1);
   }
+  .box1:hover {
+    transform: scale(1.1);
+  }
   
   
  /* Media query for responsiveness */
 @media only screen and (max-width: 768px) {
   .box {
-    width: 90px; /* Further reduce width for smaller screens */
-    height: 40px; /* Further reduce height for smaller screens */
+    width: 200px; /* Further reduce width for smaller screens */
+    height: 50px; /* Further reduce height for smaller screens */
   
-    margin: 5px ; /* Further reduce margin between boxes for smaller screens */
+    margin-left: 20px ; /* Further reduce margin between boxes for smaller screens */
   }
-  .container {
-    overflow-x: scroll; /* Enable horizontal scrolling */
+  .box1 {
+    width: 200px; /* Further reduce width for smaller screens */
+    height: 50px; /* Further reduce height for smaller screens */
+  
+    margin-left: -40px ; /* Further reduce margin between boxes for smaller screens */
   }
+  /* .container {
+ 
+ 
+  } */
 }

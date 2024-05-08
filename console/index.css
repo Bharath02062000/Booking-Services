@@ -1,0 +1,153 @@
+
+header{
+    border-bottom: blue;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-bar{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #333;
+    padding: 15px;
+    /* height: 9vh; */
+    width: 100vw;
+}
+
+.logo{
+    margin-left: 5%;
+}
+
+
+/* menu items styling starts */
+.menu-ul{
+    display: flex;
+    
+}
+
+.menu-ul li{
+    margin: 0 20px;
+    list-style: none;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-ul li a{
+    color: #333;
+}
+/* menu items styling ends */
+
+
+/* sign-btns styling starts */
+.sign-btns-ul{
+    display: flex;
+
+}
+.sign-btns-ul li{
+    margin: 0 20px;
+    list-style: none;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sign-btns-ul li a{
+    color: #333;
+    
+}
+
+/* .sign-btns-ul li a:hover{
+    color: aqua;
+    font: bolder;
+} */
+
+/* sign-btns styling ends */
+
+/* toggle-button styling starts */
+
+.toggle-button{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+.bars{
+        height: 3px;
+        width: 100%;
+        background-color: #333;
+        border-radius: 10px;
+
+    }
+
+/* toggle-button styling ends */
+    
+
+/* functionality for togglling starts */
+
+
+@media (max-width:900px){
+    .toggle-button{
+        display: flex;
+    }
+    .menu-ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .sign-btns-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo{
+        margin-left: 1%;
+    }
+        
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .menu , .sign-btns{
+        width: 100%;
+    }
+
+    .nav-bar li {
+        text-align: center;
+        margin-top: 20px;
+
+
+
+    }
+
+    .sign-btns li{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu-ul.active , .sign-btns-ul.active{
+            display: flex;
+        }
+
+
+
+}
+/* functionality for togglling ends */
+
+
+
+
+
+
+

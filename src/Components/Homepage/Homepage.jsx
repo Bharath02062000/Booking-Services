@@ -7,6 +7,7 @@ import Hero from '../Hero/Hero';
 import Cards from '../../Servicetypes/Cards/Cards';
 import Services from '../../Servicetypes/ServicesScreen/services';
 import { useEffect, useState } from 'react';
+import Booknow from '../Booknow/Booknow';
  
 
 function Homepage() { 
@@ -41,6 +42,7 @@ function Homepage() {
         />
          <Cards />
         <Services />
+        {/* <Booknow /> */}
       
      </div>
   );

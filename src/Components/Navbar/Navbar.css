@@ -1,38 +1,4 @@
-/* .nav {
-   display: flex; 
-   justify-content: space-between;
-   align-items: center;
-   margin: 40px 120px;
-   color: white;
-}
-.logo img {
-  width: 200px;
-  height: 200px;
-}
-.nav-logoname{
-    font-family: Helvetica;
-    font-size:42px ;
-    font-weight: 500;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 18px;
-    gap: 90px;
-}
-.nav-login{
-    border-radius: 50px;
-    padding: 10px 38px;
-    background: #fdab01;
-    color: #262626;
-
-} */
-/* Original CSS code */
-/* Reset default margins and paddings */
-
-
-
+/* Common styles for both laptop and mobile screens */
 body, ul {
   margin: 0;
   padding: 0;
@@ -49,21 +15,14 @@ body, ul {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 5px #000;
-  
   color: black;
-  z-index: 1000;  
+  z-index: 1000;
 }
 
 .logo img {
   width: 200px;
   height: 95px;
   margin-right: 20px;
-}
-
-.nav-logoname {
-  font-family: Helvetica;
-  font-size: 42px;
-  font-weight: 500;
 }
 
 .nav-menu {
@@ -73,105 +32,27 @@ body, ul {
   font-weight: 500;
   font-size: 20px;
   gap: 30px;
+  margin: 0px 30px;
 }
-.profile-icon {
-  width: 50px; /* Adjust profile icon size as needed */
-  border-radius: 50%; /* Make the icon circular */
+
+.nav-menu li {
   cursor: pointer;
 }
-.nav-login:hover {
-  transform: scale(1.1);
-}
-.nav-home:hover {
-  transform: scale(1.1);
-}
-.nav-contact:hover {
-  transform: scale(1.1);
-}
-.nav-about:hover {
-  transform: scale(1.1);
-}
-.dark-nav{
-  background: #f1f1f1;
-  transition: 0.5s;
-  box-shadow: 5px 5px 20px #000;
 
-}
-.nav-login {
-  
-  transition: transform 0.3s ease;  
-  border-radius: 20px;
-  padding: 10px 38px;
-  background:  #041484;  
-   color: #fff;
-  margin-right: 10px;  
-}
-  
-.a {
-  text-decoration: none;
-}
-.nav-carcart img{
-  width: 10px;
-  height: 10px;
-  color: #fff;
-}
-.nav-prof img{
-  width: px;
-  height: 10px;
-}
-
-.nav-contact{
-  
-  transition: transform 0.3s ease; 
-  border-radius: 20px;
-  padding: 10px 38px;
-  
-  color: #000; 
- 
-}
-.dark-nav .profile-menu {
-  background-color: #fff; /* Change profile menu background color for dark mode */
-  color: #333; /* Change profile menu text color for dark mode */
-}
-
-.dark-nav .profile-menu li:hover {
-  background-color: #444; /* Change profile menu background color on hover for dark mode */
-}
-
-.dark-nav .profile-menu li a {
-  color: #000; /* Change profile menu link color for dark mode */
-}
-/* .profile-menu li a:hover {
-  color: #007bff;  
-} */
-.profile-menu li{
-  color: #fff;
-}
- 
-.nav-about{
-   
-  transition: transform 0.3s ease;  
-  border-radius: 20px;
-  padding: 10px 38px;
-  
-  color: #000; 
-   
-}
-.nav-home{
-  
-  transition: transform 0.3s ease;  
-  border-radius: 20px;
-  padding: 10px 38px;
- 
-  color: #000; 
-}
-.nav .active{
-  padding-bottom: 2px;
-  border-bottom: 5px solid  #fdab01;
-
-}
 .nav-profile:hover .profile-menu {
-  display: block; /* Show the menu on hover */
+  display: block;  
+}
+
+.profile-menu {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 100%; 
+  right: 0;
+  background-color: #333;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  border-radius: 4px;
+  display: none; /* Hide the menu by default */
 }
 
 .profile-menu li {
@@ -179,109 +60,92 @@ body, ul {
 }
 
 .profile-menu li:hover {
-  background-color: #555; /* Change background color on hover */
+  background-color: #555; 
 }
-.profile-menu {
-  list-style-type: none;
-  padding: 0;
-  position: absolute;
-  top: 100%; /* Position the menu below the profile icon */
-  right: 0;
-  background-color: #333; /* Background color of profile menu */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for elevation effect */
-  border-radius: 4px;
-  /* Hide the menu by default */
+
+.profile-icon {
+  width: 50px;  
+  border-radius: 50%;  
+  cursor: pointer;
 }
-.menuicon{
+
+.menuicon {
   display: none;
 }
-  /* Mobile styles for Navigation */
-@media screen and (max-width: 768px) {
-  .nav {
-    margin: 0px; /* Adjust margin for better spacing */
-    padding: 10px 20px; /* Adjust padding for better spacing */
-  }
 
-  .logo img {
-    width: 120px; /* Adjust logo size for mobile */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Adjust margin for better spacing */
-  }
+.nav-menu li.active {
+  padding-bottom: 2px;
+  border-bottom: 5px solid #fdab01;
+}
 
-  .nav-logoname {
-    font-size: 24px; /* Decrease font size for mobile */
-  }
+.nav-menu li:hover {
+  transform: scale(1.1);
+}
 
+.nav-login {
+  border-radius: 20px;
+  padding: 10px 38px;
+  background: #041484;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav-services {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-services .submenu {
+  position: absolute;
+  cursor: pointer;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #000;
+}
+
+.nav-services:hover .submenu {
+  display: block;
+}
+
+.nav-services .submenu li {
+  padding: 10px 20px;
+}
+
+.nav-services .submenu li:hover {
+  background-color: #fdab01;
+}
+
+ul{
+  list-style: none;
+
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
   .nav-menu {
-    display: none; /* Hide the menu items by default */
-    flex-direction: column; /* Display menu items in a column */
-    align-items: center; /* Center align menu items */
-    gap: 10px; /* Adjust gap between menu items */
+    display: none;
   }
 
   .menuicon {
-    display: block; /* Display the menu icon for mobile */
-    font-size: 24px; /* Adjust size of the menu icon */
+    display: block;
     cursor: pointer;
+    height: 50px;
+    width: 50px;
   }
 
-  .nav.active .nav-menu {
-    display: flex; /* Show the menu items when the navigation is active */
+  .nav .logo {
+    margin-left: 10px;
   }
 
-  .nav-menu li {
-    padding: 10px; /* Adjust padding for menu items */
+  .nav-services .submenu {
+    width: 200%;
   }
-
-  .nav-menu li:hover {
-    background-color: #f1f1f1; /* Change background color on hover */
-  }
-
-  .nav-login,
-  .nav-contact,
-  .nav-about,
-  .nav-home {
-    margin-top: 10px; /* Adjust margin for better spacing */
-    border-radius: 20px; /* Add border radius */
-    padding: 8px 20px; /* Adjust padding for better spacing */
-  }
-
-  .profile-icon {
-    width: 40px; /* Adjust profile icon size for mobile */
-    height: 40px;
-    margin-right: 10px; /* Adjust margin for better spacing */
-  }
-
-  .nav-carcart img,
-  .nav-prof img {
-    width: 20px; /* Adjust size of cart and profile icons */
-    height: 20px;
-  }
-
-  .profile-menu {
-    width: 50%;
-    margin-left: 190px;
-    display: none; /* Hide the menu by default on mobile */
-    list-style-type: none;
-    padding: 0;
-    position: absolute;
-    top: calc(100% + 0px); /* Position the menu below the profile icon with some spacing */
-    left: 0;
-    background-color: #333; /* Background color of profile menu */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for elevation effect */
-    border-radius: 4px;
-    z-index: 1001; /* Ensure the menu is on top of other elements */
-  }
-
-  .nav-profile:hover .profile-menu {
-    display: block; /* Show the menu on hover */
-  }
-
-  .profile-menu li {
-    padding: 10px 20px;
-  }
-
-  .profile-menu li:hover {
-    background-color: #555; /* Change background color on hover */
+  
+  @media only screen and (max-width: 768px) {
+    .nav-services .submenu {
+      width: 200%;
+    }
   }
 }

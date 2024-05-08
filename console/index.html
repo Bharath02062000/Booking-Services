@@ -52,7 +52,7 @@
     <header>
         <nav class="nav-bar">
             <!-- <div class="logo">CompanyLogo</div> -->
-            <a href="https://mygarage.vehk.in" class="logo">
+            <a class="logo" id="cta-email" style="cursor:pointer">
               <img class="w-24 h-14" src="assets/img/vehk-logo.png" alt="AutoConsole logo" />
             </a>
 
@@ -67,7 +67,8 @@
 
             <div class="sign-btns">
                 <ul class="sign-btns-ul">
-                    <li><a href="https://mygarage.vehk.in">Sign-In</a></li>
+                    <!-- <li><a href="https://mygarage.vehk.in">Register</a></li> -->
+                    <li><a id="cta-email" style="cursor:pointer">Register</a></li>
                 </ul>
             </div>
 
@@ -108,8 +109,8 @@
                     automobile garage more efficiently by predicting vehicle health and maintaining records.</h2>
                 </div>
                 <div class="mt-10 space-y-4"><a to class="ui-button ui-button-base ui-button-primary"
-                    href="https://mygarage.vehk.in">Get Started</a><ile-root id="ile-1" class="mt-4 sm:max-w-lg">
-                    <form
+                    id="cta-email">Get Started</a><ile-root id="ile-1" class="mt-4 sm:max-w-lg">
+                    <!-- <form
                       class="grid gap-2 grid-cols-1 sm:w-full sm:flex sm:items-center sm:flex-wrap mt-4 sm:max-w-lg">
                       <label for="hero-email" class="sr-only">Email address</label><input id="hero-email" value=""
                         type="email"
@@ -117,7 +118,7 @@
                         required placeholder="Enter your email...">
                       <div><button to class="ui-button ui-button-base ui-button-primary" type="submit">Submit</button>
                       </div>
-                    </form>
+                    </form> -->
                   </ile-root>
                   <script></script>
                   <script type="module" async>import { h as e, c as m } from "/site/auto-console-uwdtx/assets/iles.54b00b61.js"; import { c as o } from "/site/auto-console-uwdtx/assets/SignupForm.91cf0870.js"; import "/site/auto-console-uwdtx/assets/vendor-vue.398eccbf.js"; import "/site/auto-console-uwdtx/assets/UiButton.cab407b3.js"; import "/site/auto-console-uwdtx/assets/vite.c27b6911.js"; e(m, o, "ile-1", { name: "hero", placeholder: "Enter your email...", buttonLabel: "Submit", siteId: "IXKdl22aYzEYPIIk8pPV", class: "mt-4 sm:max-w-lg" }, {});
@@ -370,14 +371,46 @@
                 <ile-root id="ile-3" class="mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg">
                   <form
                     class="grid gap-2 grid-cols-1 sm:w-full sm:flex sm:items-center sm:flex-wrap mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg">
-                    <label for="cta-email" class="sr-only">Email address</label><input id="cta-email" value=""
+                     <h3 align="center">You Garage is Just a Single Click Away </h3>
+                    <!--  <input id="cta-email" value=""
                       type="email"
                       class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring-primary focus-visible:ring-primary flex-1"
-                      required placeholder="Enter your email...">
-                    <div><button to class="ui-button ui-button-base ui-button-primary" type="submit">Submit</button>
-                    </div>
+                      required placeholder="Enter your email..."> -->
+                    <button align="center" style="margin: 10px auto;" class="ui-button  ui-button-base ui-button-primary" id="cta-email" >Join With Us</button>
+                    
                   </form>
                 </ile-root>
+                  <script>
+                    document.getElementById('cta-email').addEventListener('click', function(event) {
+                      event.preventDefault(); // Prevent the default link behavior
+                      
+                      // Specify the path to your HTML file
+                      const htmlFilePath = './form.html';
+                      
+                      // Navigate to the HTML file in the current window
+                      window.open(htmlFilePath, '_self');
+                    });
+
+                      document.getElementById('cta-email').addEventListener('click', function(event) {
+                      event.preventDefault(); // Prevent the default link behavior
+                      
+                      // Specify the path to your HTML file
+                      const htmlFilePath = './form.html';
+                      
+                      // Navigate to the HTML file in the current window
+                      window.open(htmlFilePath, '_self');
+                    });
+
+                    document.getElementById('cta-email').addEventListener('click', function(event) {
+                      event.preventDefault(); // Prevent the default link behavior
+                      
+                      // Specify the path to your HTML file
+                      const htmlFilePath = './form.html';
+                      
+                      // Navigate to the HTML file in the current window
+                      window.open(htmlFilePath, '_self');
+                    });
+                  </script>
                 <script></script>
                 <script type="module" async>import { h as m, c as t } from "/site/auto-console-uwdtx/assets/iles.54b00b61.js"; import { c as a } from "/site/auto-console-uwdtx/assets/SignupForm.91cf0870.js"; import "/site/auto-console-uwdtx/assets/vendor-vue.398eccbf.js"; import "/site/auto-console-uwdtx/assets/UiButton.cab407b3.js"; import "/site/auto-console-uwdtx/assets/vite.c27b6911.js"; m(t, a, "ile-3", { name: "cta", placeholder: "Enter your email...", buttonLabel: "Submit", siteId: "IXKdl22aYzEYPIIk8pPV", class: "mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg" }, {});
                 </script>

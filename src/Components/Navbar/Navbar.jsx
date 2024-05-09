@@ -38,7 +38,7 @@ const toggleMenu =()=>{
   
   const openHtmlFile = () => {
     
-    const htmlFilePath = '../../../console/index.html';
+    const htmlFilePath = '../../../console/index.html';//file:///C:/Users/bhara/myweb/console/index.html
     
     window.open(htmlFilePath, '_self');
   };

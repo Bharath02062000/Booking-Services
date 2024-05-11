@@ -10,15 +10,32 @@ header{
     /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke;
-    color: #333;
+    background-color: #f4f4f4;
+    color: #000;
     padding: 15px;
     /* height: 9vh; */
     width: 100vw;
+    height: 90px;
+    box-shadow: 0px 0px 5px #000;
+ 
 }
+.nav-reg {
+    border-radius: 20px;
+    padding: 10px 38px;
+    background: #fdab01;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+  }
 
 .logo{
-    margin-left: 5%;
+    /* margin-left: 5%; */
+    margin-left: 15px;
+}
+.logo img{
+    width: 200px;
+    height: 90px;
+    
 }
 
 
@@ -37,7 +54,7 @@ header{
 }
 
 .menu-ul li a{
-    color: #333;
+    color: #000;
 }
 /* menu items styling ends */
 

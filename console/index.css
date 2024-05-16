@@ -31,6 +31,7 @@ header{
 .logo{
     /* margin-left: 5%; */
     margin-left: 15px;
+    cursor: pointer;
 }
 .logo img{
     width: 200px;

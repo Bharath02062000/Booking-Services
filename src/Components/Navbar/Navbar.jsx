@@ -71,7 +71,7 @@ const toggleMenu =()=>{
             />
             {showProfileMenu && (
               <ul className="profile-menu">
-                {/* <li><Link to="/profile"></Link></li> */}
+                 {/* <li><Link to="/profile">Profile</Link></li>  */}
                 <li><button onClick={handleLogoutClick}>Logout</button></li>
               </ul>
             )}

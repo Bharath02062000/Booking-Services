@@ -23,6 +23,11 @@ import Cards from './Servicetypes/Cards/Cards';
 import Updatesoon from './Components/Updatesoon/Updatesoon';
 import Ai from './Components/Ai/Ai';
 import Services from './Servicetypes/ServicesScreen/services';
+import Listservice from './Components/Listservices/Listservice';
+import Welcome from './Components/Welcome/Welcome';
+import Faq from './Components/Faq/Faq';
+import LogoutGreeting from './LogoutGreeting/LogoutGreeting';
+import Booknow from './Components/Booknow/Booknow';
 // Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAWEFragMukqLYjTPvg9DxVjRe3GT6oG8c",
@@ -41,6 +46,16 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
 
+
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (service) => {
+    setCartItems((prevItems) => [...prevItems, service]);
+    setCart([...cart, service]);
+  };
+  // const addToCart = (service) => {
+  //   setCart([...cart, service]);
+  // };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
@@ -52,18 +67,36 @@ function App() {
   // Check if user is null before accessing properties
   const displayName = user ? user.displayName : null;
   const userProfileImage = user ? user.photoURL : null;
+  const [cart, setCart] = useState([]);
+  const removeFromCart = (index) => {
+    setCartItems((prevItems) => prevItems.filter((_, i) => i !== index));
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
+  const handleBooking = () => {
+    alert('Proceeding to booking...');
+    // Add your booking logic here
+  };
 
   return (
     <Router>
       <div className='app'>
-        <Navbar isAuthenticated={isAuthenticated} username={displayName} userProfileImage={userProfileImage} />
+        <Navbar isAuthenticated={isAuthenticated} username={displayName} userProfileImage={userProfileImage} cartItems={cartItems}  />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/authform" element={<AuthForm />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/carserv' element={<Carserv />} />
           <Route path='/about' element={<About />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/cart' element={    <Cart
+        cart={cartItems}
+        removeFromCart={removeFromCart}
+        clearCart={clearCart}
+        handleBooking={handleBooking}
+      />} />
           <Route path='/order' element={<OrderPlace />} />
           <Route path='/selectcar' element={<SelectCar />} />
           <Route path='/rendercardetails' element={<RenderCarDetails />} />
@@ -75,7 +108,11 @@ function App() {
           <Route path='/update' element={<Updatesoon />}  />
           <Route path='/ai' element={<Ai/>}/>
           <Route path='/services' element={<Services />} />
-          
+          <Route path='/ListService' element={  <Listservice addToCart={addToCart} />} />
+          <Route path='/welcome' element={ <Welcome />} />
+          <Route path='/Faqs' element={<Faq />} />
+          <Route path='/logout-greeting' element={<LogoutGreeting />} />
+          {/* <Route path='/booknow' element={<Booknow />} /> */}
         </Routes>
         <Footer />
       </div>

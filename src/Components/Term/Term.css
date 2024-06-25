@@ -1,6 +1,13 @@
-.term{
-    margin: 120px 30px;
-   
+.term {
+  font-family: Arial, sans-serif;
+  margin: 100px 70px;
+  padding: 20px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.162);
+
 }
 .termimg img{
     width: 100%;
@@ -12,8 +19,23 @@
     align-items: start;
 }
 .div{
-    margin-left: 30px;
+    margin: 30px;
+    
 }
+.termhead {
+  font-family: 'Arial, sans-serif'; 
+  font-size: 2em;  
+  font-weight: bold;  
+  color: #fff;  
+  background-color: #4a0bc6;  
+  padding: 20px;  
+  text-align: center;  
+  border-bottom: 0px solid #ddd;  
+  box-shadow: 0px 2px 4px rgb(0, 0, 0.1);  
+  margin-bottom: 20px;  
+  border-radius: 5px;  
+}
+
     /* Mobile styles for Term section */
 @media screen and (max-width: 768px) {
     .term {

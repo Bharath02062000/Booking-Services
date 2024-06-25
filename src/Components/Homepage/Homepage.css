@@ -1,0 +1,38 @@
+ /* Homepage.css */
+
+.Home {
+    position: relative;
+    /* Other styles */
+  }
+  
+/* Homepage.css */
+
+.book-now-icon {
+    position: fixed;
+    bottom: 20px;
+    border-radius: 50%;
+    right: 20px;
+    width: 70px; /* Adjust the size as needed */
+    height: 70px; /* Adjust the size as needed */
+    cursor: pointer;
+    background-color: #fff;
+    animation: bounce 1s infinite;
+    z-index: 1001; /* Ensure it's on top */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .book-now-icon:hover {
+    transform: scale(1.1);
+  }
+  

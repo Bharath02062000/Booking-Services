@@ -1,171 +1,223 @@
-.aidisplay img{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-
-}
 .ai {
-    margin: 120px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-  
-     
+  margin: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.text1 { 
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color: #000;
+}
+
+.text2 {
+  margin-top: 20px;
+  font-size: 46px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fdab01; 
+}
+
+.text3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.fleet {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 10px;
+  background-color: white;
+  padding-left: 30px;
+  margin: 10px auto;
+}
+
+.predictive,
+.predictive2 {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px auto;
+}
+.predictive1{
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+
+.fleet-img img {
+  margin-top: 100px;
+  width: 100%;
+  height: 60%;
+  box-shadow: 0 0 10px #000;
+}
+
+.pre-img img,
+.pre-img2 img {
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.aitext {
+  margin-top: 100px;
+}
+
+.aihead {
+  margin-top: 20px;
+  font-size: 36px;
+  font-family: caudex, serif;
+  font-weight: bold;
+  color: #Fdab01;
+  text-align: center;
+}
+
+.prehead {
+  margin-top: 40px;
+  font-size: 36px;
+  font-family: caudex, serif;
+  font-weight: bold;
+  color: #001586;
+  text-align: center;
+}
+
+.pretext,
+.pretext1 {
+  margin: 20px;
+}
+
+.aitext1 {
+  margin: 10px;
+  font-family: caudex, serif;
+  font-size: 1.5em;
+  color: #401b7b;
+  text-align: start;
+  line-height: 1.5em;
+}
+
+.mySlides {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 45px;  
+  font-weight: bold;
+  text-align: start;
+  padding: 10px 20px; 
+}
+
+.slideshow-container {
+  width: 100%;
+}
+
+.Every {
+  font-size: 40px;
+  font-weight: bold;
+  color: #001586;
+  margin: 10px 40px;
+  align-items: start;
+  line-height: 1.7em;
+}
+
+@media screen and (max-width: 768px) {
+  .ai {
+      padding: 20px;
+      margin: 100px 10px;
   }
-  
-  .text1 { 
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    color: #000;
+ 
+  .text1 {
+      font-size: 20px;
+      color: #000;
   }
-  
+
   .text2 {
-     
-    margin-top: 20px;
-    font-size: 46px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #fdab01;/* Add some space between the two texts */
-  }
-  .text3{
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000;
-
-  }
-  .fleet{
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    gap: 10px;
-    background-color: white;
-    padding-left: 30px;
-    margin: 10px auto;
-  }
-  .predictive{
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    gap: 10px;
-    background-color: white;
-    padding: 20px;
-    margin: 10px auto;
-  }
-  .fleet-img{
-    padding-top: 5%;
-     
-  }
-  .pre-img{
-    padding-top: 5%;
-    
-  }
-     
-  .fleet-img img{
-    margin: 30px;
-    width: 90%;
-    height: 90%;
-    border:  solid;
-    border-color: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-  }
-  .pre-img img{
-    margin: 30px;
-    width: 70%;
-    height: 70%;
-    border:  solid;
-    border-color: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-  }
-  .aitext{
-   
-    margin-top: 100px;
-    /* transition: transform 0.3s ease;  */
-  
-  }
-  .aihead{
-    margin-top: 20px;
-    font-size: 36px;
-    font-family: caudex, serif;
-    font-weight: bold;
-    color:   #Fdab01;
-    text-align: center;
-    
-  }
-  .prehead{
-    margin-top: 40px;
-    font-size: 36px;
-    font-family: caudex, serif;
-    font-weight: bold;
-    color: #001586;
-    text-align: center;
-  }
-  .pretext{
-   
-    margin-top: 100px;
-    /* transition: transform 0.3s ease;  */
-  
-  }
-  .aitext1{
-    margin: 20px;
-    font-family: caudex, serif;
-    font-size: 1.2rem;
-    color: #000;
-   text-align: start;
-   line-height: 1.5em;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fdab01;
   }
 
-  /* Styles for mobile devices */
-@media only screen and (max-width: 768px) {
-    .ai {
-      margin: 80px 10px; /* Adjust margin for smaller screens */
-    }
-  
-    .text1 {
-      font-size: 20px; /* Decrease font size for smaller screens */
-    }
-  
-    .text2 {
-      font-size: 36px; /* Decrease font size for smaller screens */
-    }
-  
-    .text3 {
-      font-size: 12px; 
-      /* Decrease font size for smaller screens */
-    }
-  
-    .fleet,
-    .predictive {
-      grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
-      padding: 10px; /* Adjust padding for smaller screens */
-      gap: 20px; /* Decrease gap between grid items for smaller screens */
-    }
-  .pre-img img{
-    width: 80%; /* Make images fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 10px px; 
+  .text3 {
+      font-size: 18px;
+      color: #000;
   }
-    .fleet-img img {
-      width: 100%; /* Make images fill the container width */
-      height: auto; /* Maintain aspect ratio */
-      margin: 10px 0; /* Adjust margin for smaller screens */
-    }
-  
-    .aitext,
-    .pretext {
-      margin-top: 60px; /* Adjust margin-top for smaller screens */
-    }
-  
-    .aihead,
-    .prehead {
-      font-size: 24px; /* Decrease font size for smaller screens */
-      margin-top: 30px; /* Adjust margin-top for smaller screens */
-    }
-  
-    .aitext1 {
-      font-size: 1rem; /* Decrease font size for smaller screens */
-      margin: 10px; /* Adjust margin for smaller screens */
-    }
+
+  .Every {
+      font-size: 24px;
+      color: #001586;
+      line-height: 1.5em;
+      margin: 10px 20px;
   }
-  
+
+  .slideshow-container {
+      margin-top: 10px;
+  }
+
+  .mySlides img {
+      width: 100%;
+  }
+
+  .text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+
+  .fleet,
+  .predictive,
+  .predictive1,
+  .predictive2 {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: 20px 10px;
+  }
+
+  .fleet-img img,
+  .pre-img img,
+  .pre-img2 img {
+      margin-top: 10px;
+      width: 100%;
+      height: auto;
+  }
+
+  .aihead,
+  .prehead {
+      font-size: 24px;
+      margin-top: 20px;
+  }
+
+  .pretext,
+  .pretext1 {
+      font-size: 14px;
+      margin: 10px 5px;
+      text-align: center;
+  }
+
+  .aitext {
+      margin-top: 50px;
+  }
+
+  .aitext1 {
+      font-size: 18px;
+      margin: 5px;
+      text-align: start;
+  }
+}

@@ -6,9 +6,9 @@ const Privacy = () => {
   return (
     <div className='privacy'>
         <div className='privacy1'>
-        <div className='privacyimg'>
-            <img src={privacyimg} alt="" />
-        </div>
+        <div className='termhead'>
+        Privacy Policy
+            </div>
         <div className='privacytext'>
             <div> <b> Updated on 2024</b></div><br/>
             <div className='p2' > 
@@ -16,7 +16,7 @@ const Privacy = () => {
 
             </div><br/>
             <div>
-              Thank you for visiting our platform <a href="https://www.vehk.in">WWW.vehk.in</a> 
+              Thank you for visiting our platform <a href="https://www.vehk.in">www.vehk.in</a> 
               , or the ‘Vehk’ applications available over the app store by Apple Inc. or the play store by Google (collectively referred to as “Platforms” and individually as a “Platform”). The Platform (and its subdomains) is owned and operated by Idotinfinity Private Limited (“Company”, “We”, “Our” or “Us”).
 
 
@@ -185,14 +185,14 @@ d)	When you enter User information (such as log in credentials) in respect of yo
     <b> a)	Your Acknowledgment:</b><br/>
     All Information disclosed by you shall be deemed to be disclosed willingly and without any coercion. No liability pertaining to the authenticity/genuineness/misrepresentation/fraud/negligence etc. of the Information disclosed shall lie on Us nor will We in any way be responsible to verify any Information obtained from You. You shall ensure and confirm that the Information provided by You is complete, accurate and up to date. 
 <br/><b>  b)	Data Retention and Data Deletion:</b><br/>
-We shall retain information that we collect for as long as is necessary for the performance of the contract between you and us and to comply with our legal obligations. If you no longer want to use the Platform and want your User Account or Information to be deleted, you may contact us on <a href='info@vehk.com'>info@vehk.com</a> to request in good faith that your User Account or Information be deleted. Your User Account and all your Information will be deleted within a reasonable period of time, subject to applicable law. If you wish to use the Platform to avail any associated services therein once your User Account is deleted pursuant to you request, you will have to sign-up as a new User. 
+We shall retain information that we collect for as long as is necessary for the performance of the contract between you and us and to comply with our legal obligations. If you no longer want to use the Platform and want your User Account or Information to be deleted, you may contact us on <a href='support@vehk.in'>support@vehk.in</a> to request in good faith that your User Account or Information be deleted. Your User Account and all your Information will be deleted within a reasonable period of time, subject to applicable law. If you wish to use the Platform to avail any associated services therein once your User Account is deleted pursuant to you request, you will have to sign-up as a new User. 
 <br/><b> c)	Rectification of Inaccurate or Incomplete Information:</b><br/>
 We may permit or deny modification of any Information, to the extent such Information is required by us in order to be compliant with applicable laws. You may request us in good faith to correct inaccurate or incomplete personal information concerning you (which you cannot update yourself within your account). However, please note that in the event you withdraw your consent, we cannot ensure the continuity of your access or usage of the Platform and any associated services.
 <br/><b>   d)	Withdrawing Consent and Restriction of Collecting Data:</b><br/>
 Where you have provided your consent to the collection of your Information by us, you may withdraw your consent at any time by sending a communication to us at [Please insert an email address] specifying which consent you are withdrawing. Please note that the withdrawal of your consent does not affect the lawfulness of any processing activities based on such consent before its withdrawal. However, please note that in the event you withdraw your consent, we cannot ensure the continuity of your access or usage of the Platform and any associated services. 
 <br/><b>  e)	Complaints:</b><br/>
-If you wish to place a complaint with regard to privacy requirements or laws, access any of your information or would like to update or correct any errors in your User Information, please contact our Grievance Redressal Officer, at charansingh@vehk.in so that we can consider and respond to your request. We will endeavour to address all request within 7 days from the date such a request is made.
-f)	If you have any questions or complaints about this Privacy Policy, the Terms of Use, or our handling practices, you may send an email to us at charansingh@vehk.in.
+If you wish to place a complaint with regard to privacy requirements or laws, access any of your information or would like to update or correct any errors in your User Information, please contact our Grievance Redressal Officer, at support@vehk.in.in so that we can consider and respond to your request. We will endeavour to address all request within 7 days from the date such a request is made.
+f)	If you have any questions or complaints about this Privacy Policy, the Terms of Use, or our handling practices, you may send an email to us at support@vehk.in.
 </ol> <br/>
 </div>
 <div className='p2'>
@@ -258,12 +258,12 @@ You shall be eligible to the following individual rights.
  You shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning you or similarly significantly affects you. This is subject to exceptions under applicable law. In such cases where exceptions apply, you shall have the right to obtain human intervention on the part of the Company, to express your point of view and to contest the decision.
  
  <br/><b>  vii)	Right to lodge a complaint: </b> <br/>
-If you believe that We have infringed your rights, You have the right to complain about Our processing of your personal information to the relevant data protection authority. You can complain in the EU member state where you live or work, or in the place where the alleged breach of data protection law has taken place.Alternatively, you can also first contact us first at charansingh@vehk.in so that We can try to address the issue internally.  
+If you believe that We have infringed your rights, You have the right to complain about Our processing of your personal information to the relevant data protection authority. You can complain in the EU member state where you live or work, or in the place where the alleged breach of data protection law has taken place.Alternatively, you can also first contact us first at support@vehk.in.in so that We can try to address the issue internally.  
  
  </ol>
- You can exercise any of the abovementioned rights by writing to Us at  <a href='info@vehk.com'>info@vehk.com</a>
+ You can exercise any of the abovementioned rights by writing to Us at  <a href='	support@vehk.in'>support@vehk.in</a>
  <br/><b> f)	Contact Details: </b> <br/>
- The Company is located at Hyderabad, India and can be contacted via email at charansingh@vehk.in and via phone at [insert phone number].
+ The Company is located at Hyderabad, India and can be contacted via email at support@vehk.in and via phone at 1206852702.
 
  </ol>
 </div>

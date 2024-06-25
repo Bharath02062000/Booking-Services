@@ -35,22 +35,22 @@ const Services = () => {
           <div className='image'>
             <img src={service1} alt="" />
             <div className='caption'>
-              <img src={icon2} alt="" />
-              <p>A/C Service</p>
+              {/* <img src={icon2} alt="" /> */}
+              {/* <p>A/C Service</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service2} alt="" />
             <div className='caption'>
-              <img src={icon1} alt="" />
-              <p>Car Service</p>
+              {/* <img src={icon1} alt="" /> */}
+              {/* <p>Car Service</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service3} alt="" />
             <div className='caption'>
-              <img src={icon8} alt="" />
-              <p>Battery Service</p>
+              {/* <img src={icon8} alt="" /> */}
+              {/* <p>Battery Service</p> */}
             </div>
           </div>
           </div>
@@ -58,22 +58,22 @@ const Services = () => {
           <div className='image'>
             <img src={service4} alt="" />
             <div className='caption'>
-              <img src={icon4} alt="" />
-              <p>Wheel Care</p>
+              {/* <img src={icon4} alt="" /> */}
+              {/* <p>Wheel Care</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service5} alt="" />
             <div className='caption'>
-              <img src={icon5} alt="" />
-              <p>Detailing Service</p>
+              {/* <img src={icon5} alt="" /> */}
+              {/* <p>Detailing Service</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service6} alt="" />
             <div className='caption'>
-              <img src={icon7} alt="" />
-              <p>Glass Replacement</p>
+              {/* <img src={icon7} alt="" /> */}
+              {/* <p>Glass Replacement</p> */}
             </div>
           </div>
           </div>
@@ -81,22 +81,22 @@ const Services = () => {
           <div className='image'>
             <img src={service7} alt="" />
             <div className='caption'>
-              <img src={icon6} alt="" />
-              <p>Painting</p>
+              {/* <img src={icon6} alt="" /> */}
+              {/* <p>Painting</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service8} alt="" />
             <div className='caption'>
-              <img src={icon3} alt="" />
-              <p>Suspension</p>
+              {/* <img src={icon3} alt="" /> */}
+              {/* <p>Suspension</p> */}
             </div>
           </div>
           <div className='image'>
             <img src={service9} alt="" />
             <div className='caption'>
-              <img src={icon9} alt="" />
-              <p>Car Wash</p>
+              {/* <img src={icon9} alt="" /> */}
+              {/* <p>Car Wash</p> */}
             </div>
           </div>
           </div>

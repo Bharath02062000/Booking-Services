@@ -1,17 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
-
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Homepage.css';
 import Background from '../Backgroung/Background';
 import Hero from '../Hero/Hero';
 import Cards from '../../Servicetypes/Cards/Cards';
 import Services from '../../Servicetypes/ServicesScreen/services';
-import { useEffect, useState } from 'react';
 import Booknow from '../Booknow/Booknow';
- 
+import bookIcon from '../../assets/bookingicon.png'; // Make sure you have an icon/image for the button
 
 function Homepage() { 
-
   let heroData = [
     { text1: " BEST PRICE", text2: "Better Service" },
     { text1: "OUR SERVICE IS THE KEY", text2: " To a fresh start" },
@@ -20,6 +17,7 @@ function Homepage() {
 
   const [heroCount, setHeroCount] = useState(0);
   const [playStatus, setPlayStatus] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -29,22 +27,30 @@ function Homepage() {
     return () => clearInterval(intervalId);
   }, []);
 
+  const handleBookNowClick = () => {
+    // navigate('/booknow');
+  };
 
- return (
-    <div className='app'>
-       <Background playStatus={playStatus} heroCount={heroCount} />
-        <Hero
-          setPlayStatus={setPlayStatus}
-          heroData={heroData[heroCount]}
-          heroCount={heroCount}
-          setHeroCount={setHeroCount}
-          playStatus={playStatus}
-        />
-         <Cards />
-        <Services />
-        {/* <Booknow /> */}
-      
-     </div>
+  return (
+    <div className='Home'>
+      <Background playStatus={playStatus} heroCount={heroCount} />
+      <Hero
+        setPlayStatus={setPlayStatus}
+        heroData={heroData[heroCount]}
+        heroCount={heroCount}
+        setHeroCount={setHeroCount}
+        playStatus={playStatus}
+      />
+      <Cards />
+      <Services />
+      {/* <Booknow />  */}
+      {/* <img
+        src={bookIcon}
+        alt="Book Now"
+        className="book-now-icon"
+        onClick={handleBookNowClick}
+      />  */}
+    </div>
   );
 }
 

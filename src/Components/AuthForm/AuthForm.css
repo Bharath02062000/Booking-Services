@@ -56,8 +56,8 @@ button {
   padding: 10px 20px;
   margin-top: 10px;
   background-color:#fdab01;
-  color:  #fff;
-  border: none;
+  color:  #000;
+  border:  solid;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  background-color: #333;
+  background-color: #e8b286;
 }
 
 .error-message {
@@ -78,8 +78,8 @@ button:hover {
   padding: 10px 20px;
   margin-top: 10px;
   background-color: #041484;
-  color:#fdab01;
-  border: none;
+  color:#fff;
+  border:  solid #000;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -87,7 +87,7 @@ button:hover {
 }
 
 .google-signin-button:hover {
-  background-color:#333;
+  background-color:#120529;
 }
 
 .auth-toggle {

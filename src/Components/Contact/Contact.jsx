@@ -14,8 +14,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "880e9e6f-63e9-4e88-a948-549610ca61b3");
-
+    formData.append("access_key", "2bfd6294-866c-4244-aaf5-ea040414a5f5");
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
@@ -40,8 +39,8 @@ const Contact = () => {
             feel free to reach out through contact from or find our contact information below. your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our community.
         </p>
         <ul> 
-            <li><img src={mailicon} alt='' />info@vehk.in</li>
-            <li><img src={phoneicon} alt='' />+91 9154186096</li>
+            <li><img src={mailicon} alt='' />support@vehk.in</li>
+            <li><img src={phoneicon} alt='' />1206852702</li>
             <li><img src={locationicon} alt='' />3rd floor, V.V Plaza, Patrika Nagar<br/> Hitech City- 500081, Telangana </li>
         </ul>
         </div>

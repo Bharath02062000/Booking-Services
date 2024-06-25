@@ -7,12 +7,12 @@
    return (
      <div className='refund'>
     <div className='refund1'>
-        <div className='refimg'>
-            <img src={refimg} alt="" />
-        </div>
+    <div className='termhead'>
+    Refund Policy
+            </div>
         <div className='reftext'>
           <div className='1'><b> Return & Refund Policy</b></div>
-          <div className='1'><b> Updated at 2022-05-01</b></div><br/>
+          <div className='1'><b> Updated at 2024-05-20</b></div><br/>
           <div className='r3'>Defination and key terms</div>
           <p>
           To help explain things as clearly as possible in this Return & Refund Policy, every time any of these terms are referenced, are strictly
@@ -81,7 +81,7 @@ If you face any issues, please contact our Support Team immediately.
 <div className='r3'>Contact Us</div>
 <p>If, for any reason, You are not completely satisfied with any good or service that we provide, don't hesitate to contact us and we will discuss any of the issues you are going through with our product.
 
-Via Email: info@vehk.in
+Via Email: support@vehk.in
 
 Via this Link: <a href='https://www.vehk.in'>https://www.vehk.in</a></p>
         </div>

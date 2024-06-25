@@ -22,7 +22,7 @@ body, ul {
 .logo img {
   width: 200px;
   height: 95px;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .nav-menu {
@@ -40,17 +40,17 @@ body, ul {
 }
 
 .nav-profile:hover .profile-menu {
-  display: block;  
+  display: block;
 }
 
 .profile-menu {
   list-style-type: none;
   padding: 0;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   right: 0;
-  background-color: #333;  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   display: none; /* Hide the menu by default */
 }
@@ -60,17 +60,18 @@ body, ul {
 }
 
 .profile-menu li:hover {
-  background-color: #555; 
+  background-color: #555;
 }
 
 .profile-icon {
-  width: 50px;  
+  width: 50px;
   height: 50px; /* Set height equal to width for a circular shape */
-  border-radius: 50%;  
+  border-radius: 50%;
   cursor: pointer;
   border: 2px solid #fff; /* Add a white border */
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Add a shadow */
 }
+
 .menuicon {
   display: none;
 }
@@ -79,7 +80,6 @@ body, ul {
   padding-bottom: 2px;
   border-bottom: 5px solid #fdab01;
 }
-
 .nav-menu li:hover {
   transform: scale(1.1);
 }
@@ -92,6 +92,7 @@ body, ul {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .nav-services {
   position: relative;
   cursor: pointer;
@@ -117,37 +118,137 @@ body, ul {
 
 .nav-services .submenu li:hover {
   background-color: #fdab01;
+  
 }
 
-ul{
+ul {
   list-style: none;
-
+}
+.nav-cart {
+  position: relative;
+  display: inline-block;
+}
+.cart-count{
+  color: red;
+ 
+}
+.nav-cart img {
+  width: 50px;
+  height: 50px;
+}
+.logout-greeting {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 
-/* Media query for mobile screens */
-@media only screen and (max-width: 768px) {
+.logout-greeting .logout-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+/* City selector container */
+.select-city {
+  position: relative;
+  margin-right:20px;
+ 
+}
+
+/* City selector styling */
+.select-city select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+   border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.select-city select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .submenu li {
+    width: 50%;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
   .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
     display: none;
+  }
+  .nav-services{
+    width: 70%;
+    
+  } 
+ .submenu li:hover {
+    background-color: #fdab01;
+    width: 72%;
+    
+  }
+  .nav-menu.mobile-active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    padding: 10px 0;  /* Increased padding for better touch interaction */
+  }
+
+  .profile-menu {
+    right: 30px;
+  }
+  
+
+  .profile-icon {
+    width: 50px;
+    height: 50px;
   }
 
   .menuicon {
     display: block;
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    margin-right: 40px;
+    width: 60px;  /* Adjusted size for better fit on smaller screens */
+    height: 60px; /* Adjusted size for better fit on smaller screens */
   }
 
-  .nav .logo {
-    margin-left: 10px;
+  .nav-login {
+    width: 100%;
+    text-align: center;
+  }
+  .select-city {
+    width: 65%;
+    margin-bottom: 0px;
   }
 
-  .nav-services .submenu {
-    width: 200%;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .nav-services .submenu {
-      width: 200%;
-    }
+  .select-city select {
+    width: 50%;
   }
 }

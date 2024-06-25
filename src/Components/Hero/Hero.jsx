@@ -5,7 +5,9 @@
 import { useNavigate } from 'react-router-dom'
 
 const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
-
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
   const navigate = useNavigate(); 
   return (
     <div className='hero'>
@@ -15,7 +17,7 @@ const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
       </div>
       <div className='hero-explore'>
         <p>Find a Service</p>
-        <img src={arrow_btn} onClick={() => { navigate('/selectcar') }} alt=""/>
+        <img src={arrow_btn} onClick={() => { navigate('/update') }} alt=""/>
       </div>
       <div className="hero-dot-play">
         <ul className="hero-dots">

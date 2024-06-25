@@ -7,6 +7,9 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'reac
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="footer">
       <div className="footer__top">
@@ -26,7 +29,7 @@ const Footer = () => {
         <div className="footer__contact">
           <h3>Contact Us</h3>
           <p>Have questions or feedback? Feel free to contact us!</p>
-          <button className="footer__contact-button"><Link to="/contact">Contact Us</Link></button>
+          <button className="footer__contact-button"><Link to="/contact"onClick={scrollToTop}>Contact Us</Link></button>
         </div>
         <div className="footer__app">
           <h3>Download Our App</h3>
@@ -38,19 +41,23 @@ const Footer = () => {
         </div>
         <div className="footer__info">
           <div className="footer__terms">
-            <p><Link to={'/term'}>Terms of Service</Link></p>
-            <p><Link to={'/privacy'}>Privacy Policy</Link></p>
-            <p> <Link to={'/refund'}>Refund Policy</Link></p>
+            <ul>
+            <p><Link to={'/term'}onClick={scrollToTop}>Terms and Conditions</Link></p>
+            <p><Link to={'/privacy'}onClick={scrollToTop}>Privacy Policy</Link></p>
+            <p> <Link to={'/refund'}onClick={scrollToTop}>Refund Policy</Link></p>
+            <p> <Link to={'/Faqs'}onClick={scrollToTop}>FAQs</Link></p>
+            </ul>
           </div>
-          <div className="footer__address">
-            <p>Address:<br/>  Idotinfinity(Vehk), 3rd floor, V.V Plaza, Patrika nagar,hitech City-500081, Telangana, India</p>
-            <p>Phone: +91 9154186096</p>
-            <p><a href='/contact'>Email: info@Vehk.in</a></p>
-          </div>
+        
         </div>
       </div>
+      <div className="footer__address">
+            <p>Toll Free Number: 1206852702</p>
+            <p><a href='/contact'onClick={scrollToTop}>Email: support@vehk.in</a></p>
+      <p>Address: idotinfinity private limited, 3rd floor, V.V Plaza, Patrika nagar,hitech City-500081, Telangana, India</p>
+</div>
       <div className="footer__copyright">
-        <p>© 2024 Idotinfinity(Vehk). All Rights Reserved.</p>
+ <p>© 2024 idotinfinity private limited. All Rights Reserved.</p>
       </div>
     </footer>
   );

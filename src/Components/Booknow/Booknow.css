@@ -1,44 +1,92 @@
+/* Default styles */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(8px); 
+  z-index: 1000;
+}
 .flash-message-form {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .flash-message-form h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .flash-message-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .flash-message-form button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .flash-message-form button:hover {
-    background-color: #0056b3;
-  }
-  .brand-logo,
+  position: relative; /* Important for positioning the close button */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust as needed */
+  max-width: 500px; /* Adjust as needed */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1001; /* Ensure it's on top */
+}
+
+.flash-message-form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.flash-message-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.flash-message-form button {
+  border:  solid;
+  background-color: #fdab01;
+  color:  #000;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.flash-message-form button:hover {
+  background-color: #e8b286;
+}
+
+.brand-logo,
 .model-image {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   border-radius: 50%;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 0px; /* Remove additional padding */
+  }
+
+  .flash-message-form {
+    padding: 15px; /* Reduce padding on mobile */
+  }
+  
+  .flash-message-form h2 {
+    font-size: 16px; /* Smaller font size */
+  }
+  
+  .flash-message-form input, 
+  .flash-message-form button {
+    padding: 12px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  .close-button {
+    font-size: 18px; /* Smaller close button */
+  }
 }

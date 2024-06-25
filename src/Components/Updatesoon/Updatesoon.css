@@ -1,8 +1,16 @@
+ 
 .update {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 300px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 300px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .update {
+    font-size: 20px; /* Smaller font size for mobile */
+    margin: 300px 20px; /* Reduced margin for mobile, with horizontal margin for spacing */
   }
-  
+}

@@ -7,12 +7,15 @@ import { } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
  
 const Cards = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <div className="container">
       <div className="row">
-     <div><Link to="/services" className="box"><FaCar /> Car Services</Link></div> 
+     <div><Link to="/services" className="box"onClick={scrollToTop}><FaCar /> Car Services</Link></div> 
      <div>
-     <Link to="/selectcar" className='box1'><FaMotorcycle /> Bike Service</Link>
+     <Link to="/services" className='box1'onClick={scrollToTop}><FaMotorcycle /> Bike Service</Link>
      </div>
 
  

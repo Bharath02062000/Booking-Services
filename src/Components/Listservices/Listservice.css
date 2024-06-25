@@ -1,0 +1,158 @@
+.services-container {
+    padding: 20px;
+    margin: 100px 0px;
+  }
+  
+  .category-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button.active, .category-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .service-category {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-category h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 200px;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .service-details {
+    text-align: center;
+  }
+  
+  .service-name {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  .service-price {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #007bff;
+  }
+  
+  .service-details button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-details button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  /* Mobile-specific styles */
+@media (max-width: 600px) {
+  .services-container {
+    padding: 10px; /* Reduce padding for mobile */
+    margin: 150px 0; /* Reduce margin for mobile */
+  }
+  
+  .category-buttons {
+    margin-bottom: 10px; /* Reduce margin for mobile */
+  }
+  
+  .category-button {
+    padding: 8px 16px; /* Adjust padding for mobile */
+    margin: 3px; /* Reduce margin between buttons */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  
+  .service-category h2 {
+    font-size: 1.2em; /* Adjust font size for mobile */
+  }
+  
+  .service-list {
+    flex-direction: column; /* Stack items vertically on mobile */
+    overflow-x: visible; /* Remove horizontal scroll */
+  }
+  
+  .service-item {
+    margin: 10px 0; /* Add margin for spacing between items */
+    min-width: 100%; /* Full width for mobile */
+  }
+  
+  .service-image {
+    width: 80px; /* Adjust image size for mobile */
+    height: 80px; /* Adjust image size for mobile */
+    margin-bottom: 8px; /* Adjust margin for mobile */
+  }
+  
+  .service-name {
+    font-size: 1em; /* Adjust font size for mobile */
+  }
+  
+  .service-price {
+    font-size: 0.9em; /* Adjust font size for mobile */
+  }
+  
+  .service-details button {
+    padding: 6px 12px; /* Adjust padding for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}

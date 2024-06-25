@@ -27,7 +27,7 @@
   }
   
   /* Logo Styling */
-  .logout-logo {
+  .logout-container img {
     width: 120px;
     height: auto;
     margin-bottom: 20px;

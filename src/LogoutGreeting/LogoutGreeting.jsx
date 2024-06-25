@@ -19,7 +19,7 @@ const LogoutGreeting = () => {
   return (
     <div className="logout-greeting">
       <div className="logout-container">
-        <img src={logo} alt="Logo" className="logout-logo" />
+        <img src={logo} alt="Logo"   />
         <h1> Thank you for visiting our Vehk, {displayName}!</h1>
         <p>We hope to see you again soon!</p>
       </div>

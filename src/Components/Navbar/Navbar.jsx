@@ -113,7 +113,7 @@ const Navbar = ({ isAuthenticated, username, userProfileImage, cartItems = [] })
       <div className='logo'>
         <img src={logo} alt="Logo" />
       </div>
-      {/* <div className='select-city'>
+       <div className='select-city'>
         <select value={userLocation} onChange={handleCityChange}>
           <option value="">Select City</option>
           {indianCities.map(city => (
@@ -122,7 +122,7 @@ const Navbar = ({ isAuthenticated, username, userProfileImage, cartItems = [] })
             </option>
           ))}
         </select>
-      </div> */}
+      </div> 
       <div className='nav-list'>
         <ul className={mobileMenu ? 'nav-menu mobile-active' : 'nav-menu'}>
           <li onClick={() => setMenu("nav-home")} className={menu === "nav-home" ? "active" : ""}>
@@ -143,12 +143,12 @@ const Navbar = ({ isAuthenticated, username, userProfileImage, cartItems = [] })
           <li onClick={() => setMenu("nav-contact")} className={menu === 'nav-contact' ? "active" : ""}>
             <Link to="/contact" onClick={scrollToTop}>Contact</Link>
           </li>
-          {/* <li className='nav-cart'>
+           <li className='nav-cart'>
             <Link to="/cart">
               <img src={cartIcon} alt="Cart" />
               {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
             </Link>
-          </li> */}
+          </li> 
           {isAuthenticated ? (
             <li className="nav-profile">
               <img

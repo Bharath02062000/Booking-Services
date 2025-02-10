@@ -44,12 +44,12 @@ function Homepage() {
       <Cards />
       <Services />
       {/* <Booknow />  */}
-      {/* <img
+      <img
         src={bookIcon}
         alt="Book Now"
         className="book-now-icon"
         onClick={handleBookNowClick}
-      />  */}
+      />  
     </div>
   );
 }

@@ -150,9 +150,9 @@ const AuthForm = ({ isLogin }) => {
           </div>
           <button type="submit">{isLoginMode ? 'Login' : 'Sign Up'}</button>
         </form>
-        <button onClick={handleGoogleSignIn} className="google-signin-button">
+{/*         <button onClick={handleGoogleSignIn} className="google-signin-button">
           {isLoginMode ? 'Sign in with Google' : 'Sign up with Google'}
-        </button>
+        </button> */}
         <p>{isLoginMode ? "Don't have an account? " : "Already have an account? "}
           <span className="auth-toggle" onClick={toggleMode}>
             {isLoginMode ? 'Sign up here' : 'Login here'}

@@ -28,7 +28,7 @@ function Homepage() {
   }, []);
 
   const handleBookNowClick = () => {
-    // navigate('/booknow');
+    navigate('/booknow');
   };
 
   return (

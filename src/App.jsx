@@ -53,9 +53,9 @@ function App() {
     setCartItems((prevItems) => [...prevItems, service]);
     setCart([...cart, service]);
   };
-  // const addToCart = (service) => {
-  //   setCart([...cart, service]);
-  // };
+  const addToCart = (service) => {
+  setCart([...cart, service]);
+   };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
@@ -112,7 +112,7 @@ function App() {
           <Route path='/welcome' element={ <Welcome />} />
           <Route path='/Faqs' element={<Faq />} />
           <Route path='/logout-greeting' element={<LogoutGreeting />} />
-          {/* <Route path='/booknow' element={<Booknow />} /> */}
+          <Route path='/booknow' element={<Booknow />} /> 
         </Routes>
         <Footer />
       </div>

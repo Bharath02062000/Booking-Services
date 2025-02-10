@@ -53,9 +53,9 @@ function App() {
     setCartItems((prevItems) => [...prevItems, service]);
     setCart([...cart, service]);
   };
-  const addToCart = (service) => {
-  setCart([...cart, service]);
-   };
+  // const addToCart = (service) => {
+  // setCart([...cart, service]);
+  //  };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
